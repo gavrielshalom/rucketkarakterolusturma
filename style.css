@@ -1,0 +1,28 @@
+body{
+    background-color: #1e1e1e;
+}
+.firstQuestion > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.secondQuestion > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thirdQuestion > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fourthQuestion > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fifthQuestion > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

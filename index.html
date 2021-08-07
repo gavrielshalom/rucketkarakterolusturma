@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Ruçket Karakter Oluşturma</title>
+</head>
+<body>
+    <h1 class="text-center" style="color: white; margin-top: 0.5em;">Ruçket karakter yaratma ekranı</h1>
+    <div class="firstQuestion text-center" style="color: white; font-size: 1rem;">
+        <p>1 - Karakterin nerede doğdu?</p>
+        <input type="radio" name="location" id="tuscan">
+        <label for="">Arizona - Tuscan</label>
+        <input type="radio" name="location" id="lyard">
+        <label for="">Arizona - Lost Yard</label>
+        <input type="radio" name="location" id="fside">
+        <label for="">Arizona - Fireside</label>
+        <input type="radio" name="location" id="byard">
+        <label for="">Arizona - Boneyard</label>
+        <input type="radio" name="location" id="omaja">
+        <label for="">Arizona - Omaja</label>
+        <input type="radio" name="location" id="tajados">
+        <label for="">Arizona - Tajados</label>
+    </div>
+    <div class="secondQuestion text-center" style="color: white; font-size: 1rem;">
+        <p style="margin-top: 2em;">2 - Karakterin mesleği?</p>
+        <input type="radio" name="profession" id="farmer">
+        <label for="">Komünitenin sınırlarında bir çiftçi</label>
+        <input type="radio" name="profession" id="warrior">
+        <label for="">Uzun yıllar çöllerde dolaşan bir savaşçı</label >
+        <input type="radio" name="profession" id="scavenger">
+        <label for="">Scavenger</label>
+        <input type="radio" name="profession" id="caravanRunner">
+        <label for="">Kervan yöneticisi</label>
+        <input type="radio" name="profession" id="consultor">
+        <label for="">Elçi Danışmanı</label>
+        <input type="radio" name="profession" id="ranger">
+        <label for="">Korucu</label>
+    </div>
+    <div class="thirdQuestion text-center" style="color: white; font-size: 1rem;">
+        <p style="margin-top: 2em;">3 - Karakterin hangi faction'a yakın?</p>
+        <input type="radio" name="faction" id="adk">
+        <label for="">Arizona Demokratik Kuvvetleri</label>
+        <input type="radio" name="faction" id="acr">
+        <label for="">Arizona Cumhuriyeti</label >
+        <input type="radio" name="faction" id="apc">
+        <label for="">Arizona Halk Cumhuriyeti</label>
+        <input type="radio" name="faction" id="ata">
+        <label for="">Arizona Ticaret İttifakı</label>
+        <input type="radio" name="faction" id="trt">
+        <label for="">3.Triumvariate</label>
+        <input type="radio" name="faction" id="aran">
+        <label for="">Arizona Korucuları</label>
+    </div>
+    <div class="fourthQuestion text-center" style="color: white; font-size: 1rem;">
+        <p style="margin-top: 2em;">4 - Karakterinin eğitimi?</p>
+        <input type="radio" name="education" id="followerEd">
+        <label for="">Kıyametin takipçileri eğitimi</label>
+        <input type="radio" name="education" id="republicanEd">
+        <label for="">Cumhuriyetçiler Eğitimi</label >
+        <input type="radio" name="education" id="lifeEd">
+        <label for="">Hayat Okulu</label>
+    </div>
+    <div class="fifthQuestion text-center" style="color: white; font-size: 1rem;">
+        <p style="margin-top: 2em;">5 - Ailen nasıl birileriydi?</p>
+        <input type="radio" name="family" id="drugFamily">
+        <label for="">Uyuşturucu bağımlısı ayyaşlar</label>
+        <input type="radio" name="family" id="eliteFamily">
+        <label for="">Cumhuriyet elitleri</label >
+        <input type="radio" name="family" id="followerFamily">
+        <label for="">Kıyamet takipçileri üyeleri</label>
+        <input type="radio" name="family" id="caravanRunnersFamily">
+        <label for="">Kervan yürütücüleri</label>
+        <input type="radio" name="family" id="gunRunnersFamily">
+        <label for="">Silah / Kaynak Kaçakçıları</label>
+        <input type="radio" name="family" id="soldiersFamily">
+        <label for="">Askerler</label>
+    </div>
+    <span class="text-center" style="color: white; display: flex; justify-content: center; margin-top: 1.5rem;">Penis boyu: <input type="range" name="" id="penisLength" min="1" max="30" onchange="updateTextInput(this.value); updateLength(this.value);"><p id="length"></p></span>
+    <span style="color: white; display: flex; justify-content: center; margin-top: 1rem;">Din: <input type="text" name="" id="religion" onchange="updateReligion(this.value);"></span>
+
+
+
+
+
+    <p id="backgroundStory"></p> 
+    <div style="display: flex;justify-content: center;"><input type="button" class="btn-primary myBtn" id="dBut" value="Karakter Dosyamı Yükle"></div>
+    <script src="script.js"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</html>
